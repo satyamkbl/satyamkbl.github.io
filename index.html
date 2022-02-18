@@ -9,7 +9,7 @@ body {font-family: Arial;}
 .tab {
   overflow: hidden;
   border: 1px solid #ccc;
-  background-color: #87CEFA;
+  background-color: #0000FF;
 }
 
 /* Style the buttons inside the tab */
@@ -45,15 +45,15 @@ body {font-family: Arial;}
 </head>
 <body>
 
-<h2>SATYAM FUELS ( NH43, PONGRO, KANSABEL)</h2>
+<h2 style="color:#0000FF;">SATYAM FUELS ( NH43, PONGRO, KANSABEL) </h2>
 <p>Distributor: Bharat Petroleum Pvt Ltd</p>
-<p>Contact: 9424184400, 9630471772, 9770582175</p>
+<p style="color:#000000;">Contact: 9424184400, 9630471772, 9770582175</p>
 
 <div class="tab">
-<button class="tablinks" onclick="openCity(event, 'BankDetails')">[Bank Details]</button>
-  <button class="tablinks" onclick="openCity(event, 'ReadCal')">[MPD Calculator]</button>
-  <button class="tablinks" onclick="openCity(event, 'DenRead')">[Density Reading]</button>
-  <button class="tablinks" onclick="openCity(event, 'DipRead')">[Tanker Dip Reading]</button>
+<button class="tablinks" onclick="openCity(event, 'BankDetails')" id="defaultOpen">Bank Details</button>
+  <button class="tablinks" onclick="openCity(event, 'ReadCal')">Reading Calculator</button>
+  <button class="tablinks" onclick="openCity(event, 'DenRead')">Density Reading</button>
+  <button class="tablinks" onclick="openCity(event, 'DipRead')">Tanker Dip Reading</button>
 </div>
 
 <div id="BankDetails" class="tabcontent">
@@ -69,9 +69,20 @@ A/C : 77080413296
 <br/>
 IFSC: SBIN0RRCHGB
 <br/>
+<p>UPI Id: Q822614583@ybl</p>
+<br/>
+
 -----------------------------------------------------------<br/>
-<img src="pic_trulli.jpg" alt="UPI: " width="500" height="333"><br/>
-------------------------------------------------------------<br/>
+<img src="https://raw.githubusercontent.com/satyamkbl/satyamkbl.github.io/8df9dacf3b52ec883e3bc4fb7c12d4ff4029ba8f/Q822614583%40ybl.png" alt="UPI: Q822614583@ybl" usemap="#workmap" style="width:480px;height:640px;">
+<br/>
+<map name="workmap">
+  <area shape="rect" coords="20,20,460,610" alt="PaymentLink" href="https://phon.pe/2tjb25it">
+</map>
+<br/>
+<p><a href="https://phon.pe/2tjb25it">Click to Make Payment to SATYAM FUELS <br/>
+(PhonePe se SATYAM FUELS ko payment karein, yahan click kr k)</a></p>
+<br/>
+-----------------------------------------------------------<br/>
 
 <br/>
 Address:<br/>
@@ -82,6 +93,7 @@ STATE - CHHATTISGARH<br/>
 PIN CODE - 496223<br/>
 MO: 9424184400, 8103377032,<br/>
 	9630471772, 9770582175<br/>
+-----------------------------------------------------------<br/>
 </div>
 
 
@@ -314,6 +326,8 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+document.getElementById("defaultOpen").click();
+
 </script>
    
 </body>
